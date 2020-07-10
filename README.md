@@ -28,11 +28,13 @@ optional arguments:
   -r, --resume          If the last attempt resulted in unexpected program
                         failure, use this option to resume from the last
                         credentail tried
+  -s SCHEME, --scheme SCHEME
+                        Scheme of base URL, default: http.
 ```
 
 ## Example
 ```
-C:\>python NiagaraPswd.py -l phpbb-rules.txt -u admin -f default.html 127.0.0.1
+C:\>python NiagaraPswd.py -l phpbb-rules.txt -u admin -f default.html -s https 127.0.0.1
  [*] Initializing wordlist...
 
  [-] admin:YeBs2wu992 is incorrect
@@ -43,7 +45,6 @@ C:\>python NiagaraPswd.py -l phpbb-rules.txt -u admin -f default.html 127.0.0.1
  [!] Keyboard Interrupt, saving last tried creds
 
 ```
-## TODO
-- [ ] Add support for HTTPS
-- [ ] Add support for threading
 
+## TODO
+- [ ] Add support for threading
